@@ -9,7 +9,7 @@ function putResToPrediction(apiRes, localStorageRes)
     } else
     { // درغیر این صورت جنسیت را در محل مشخص جاگزین می کنیم
         document.getElementById("prediction").innerHTML = "وبگاه : " + apiRes + "<br>";
-        document.getElementById("prediction").innerHTML = "لوکال استوریج : " + localStorageRes + "<br>";
+        document.getElementById("prediction").innerHTML += "لوکال استوریج : " + localStorageRes + "<br>";
         return;
     }
 }
