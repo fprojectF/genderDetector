@@ -2,7 +2,7 @@ body {
     /*
     ست کردن عکس بکگراند و سایز آن برای فیت شدن با بک گراند مرورگر 
     */
-    background-image: url("~/copertina-1.jpg");
+    background-image: url("copertina-1.jpg");
     background-size: cover;
 }
 
