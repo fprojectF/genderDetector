@@ -1,0 +1,74 @@
+body {
+    /*
+    ست کردن عکس بکگراند و سایز آن برای فیت شدن با بک گراند مرورگر 
+    */
+    background-image: url("/copertina-1.jpg");
+    background-size: cover;
+}
+
+.content {
+    /*
+        ست کردن فاصله از بالا و پایین و همچنین چپ و راست برای وست قرار گرفتن دیو محتوای اصلی 
+        همچنین ست کردن شفافیت
+        و ست کردن تنظیمات کانتینر گرید
+    */
+    width: 40%;
+    height: auto;
+    opacity: 0.7;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* دو ستون گرید */
+    grid-template-rows: auto auto auto auto auto auto;
+    /* شش ردیف گرید */
+}
+
+.column1,
+.column2 {
+    /* پدینگ دادن به ستون ها جهت مرتب شدن و خاونایی بیشتر مختوا */
+    padding: 1%;
+}
+
+.column1 {
+    /* ستون اول با شروع از اولین ستون گرید */
+    grid-column: 1/2;
+}
+
+.column2 {
+    /* ستون دوم با شروع از دذومین ستون گرید */
+    grid-column: 2/2;
+}
+
+.row {
+    /* تعریف کلاس برای تنظیم ردیف های کرید */
+    grid-row: 1/6;
+    padding: 1%;
+}
+
+.Message {
+    /*  تنظیم حاشیه قسمت پیغام*/
+    border: 1px dotted black;
+
+}
+
+#MessageText {
+    /*  تخصیص پدینگ و سایز فونت به متن پیغام جهت نمایش بهتر محتوا*/
+    font-size: 18px;
+    padding: 10% 1%;
+}
+
+.error {
+    width: 38%;
+    height: auto;
+    background-color: rgb(255, 116, 116);
+    opacity: 0.7;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 1%;
+    direction: rtl;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}

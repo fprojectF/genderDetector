@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="\script.js"></script>
+    <link rel="stylesheet" type="text/css" href="\style.css" />
+    <title>تشخیص جنسیت</title>
+</head>
+
+<body>
+    <div class="error" id="error">
+        <strong>خطا</strong>
+        نام مورد نظر در وبگاه یافت نشد
+    </div>
+    <div class="content">
+        <div class="column1">
+            <h4>Mr. or Ms. ?</h4>
+            <div class="row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+            </div>
+            <div class="row">
+                <input type="radio" name="gender" id="male" checked /> <label for="male">Male</label>
+
+            </div>
+            <div class="row">
+                <input type="radio" name="gender" id="female" /> <label for="male">Female</label>
+            </div>
+            <div class="row">
+                <button type="button" id="submit" onclick="Submit()">Submit</button>
+            </div>
+            <div class="row">
+                <button type="button" id="save" onclick="Save()">Save</button>
+            </div>
+        </div>
+        <div class="column2">
+            <h4>Prediction</h4>
+            <div class="row" id="prediction">
+                Press Submit to show prediction
+            </div>
+            <div class="row">
+                <div class="Message">
+                    <div class="row" id="MessageText">
+                        Saved Answer
+                    </div>
+
+                    <div class="row">
+                        <button type="button" id="clear" onclick="Clear()">Clear</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
