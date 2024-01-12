@@ -24,7 +24,7 @@ async function Submit()
     }
     var result = await fetch('https://api.genderize.io/?' + new URLSearchParams({
         name: name
-    }, options)).then(res => res.json()).then(data => console.log(data)); // ارسال درخواست و هندل کردن پرامیس آن
+    }, options)).then(res => res.json()).then(data => putResToPrediction(data)); // ارسال درخواست و هندل کردن پرامیس آن
     return;
 }
 
